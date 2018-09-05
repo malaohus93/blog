@@ -14,7 +14,9 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "server": "json-server --watch mock-server/db.json --port 8000",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run start\""
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
@@ -23,6 +25,7 @@
     "@types/react-dom": "^16.0.7",
     "@types/react-redux": "^6.0.6",
     "@types/react-router-dom": "^4.3.0",
+    "concurrently": "^4.0.1",
     "typescript": "^3.0.3"
   }
 }
