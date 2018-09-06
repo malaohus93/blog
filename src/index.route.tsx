@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Route, Switch } from "react-router";
 
-import HomePage from "./home-page/home-page";
-import LoginPage from "./login-page/login-page";
+import HomePage from "./pages//home-page/home-page";
+import LoginPage from "./pages/login-page/login-page";
 
 export default () => (
     <Switch>
